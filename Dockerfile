@@ -8,7 +8,7 @@ COPY static static
 
 RUN pip install --upgrade pip && pip install poetry
 
-#COPY pyproject.toml ./
+COPY pyproject.toml ./
 COPY poetry.lock ./
 
 RUN poetry config virtualenvs.create false
